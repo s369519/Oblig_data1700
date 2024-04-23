@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblig S369519</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+
+<body>
+
+<h1>Bestilling av kinobilletter</h1>
+
+<table>
+    <tr>
+        <td>Velg film:</td>
+        <td>
+            <select id="film">
+                <option value="Velg film her">Velg film her</option>
+                <option value="Biler">Biler</option>
+                <option value="Frost">Frost</option>
+                <option value="Nemo">Nemo</option>
+            </select>
+            <span id="feilFilm" class="feil"></span>
+        </td>
+    </tr>
+
+    <tr><td><br></td></tr>
+
+    <tr>
+        <td>Antall</td><td><input type="text" size="2" id="antall"/>
+        <span id="feilAntall" class="feil"></span></td>
+    </tr>
+
+    <tr><td><br></td></tr>
+
+    <tr>
+        <td>Fornavn</td><td><input type="text" id="fornavn"/>
+        <span id="feilFornavn" class="feil"></span></td>
+    </tr>
+
+    <tr>
+        <td>Etternavn</td><td><input type="text" id="etternavn"/>
+        <span id="feilEtternavn" class="feil"></span></td>
+    </tr>
+
+    <tr>
+        <td>
+            Telefonnr</td><td><input type="text" id="telefonnr"/>
+        <span id="feilTelefonnr" class="feil"></span>
+    </td>
+    </tr>
+
+    <tr>
+        <td>
+            Epost</td><td><input type="text" id="epost"/>
+        <span id="feilEpost" class="feil"></span>
+    </td>
+    </tr>
+
+    <tr>
+        <td>
+            <button onclick="validering()" class="gronnKnapp">Kjøp billett</button>
+        </td>
+    </tr>
+</table>
+
+
+<h2>Hent alle billetter</h2>
+<button onclick="getListOfBillett()" class="gulKnapp">Hent billetter</button>
+<p id="billetter"></p>
+
+
+
+</body>
+</html>
