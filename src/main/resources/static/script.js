@@ -19,7 +19,6 @@ function getBillett(){
             + "<p>" + bill.etternavn + "</p>"
             + "<p>" + bill.telefonnr + "</p>"
             + "<p>" + bill.epost + "</p>"
-
     })
 }
 
