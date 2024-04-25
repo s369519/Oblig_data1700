@@ -3,6 +3,7 @@ package oslomet.oblig_data1700;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+
 import java.util.List;
 
 @RestController
@@ -19,13 +20,13 @@ public class BillettController {
     @GetMapping("/insertBillett")
     public void insertBillett() {billettRepository.insertBillett(new Billett("Biler", 2, "Per", "Ha", 91919191, "e@a.no"));}
 
-    @GetMapping("/getBillett")
-    public List<Billett> getBillett() {
+    @GetMapping("/getBilletter")
+    public List<Billett> getBilletter() {
         return billettRepository.findAll();
     }
 
     @DeleteMapping("/slettBillett")
-    public String deleteBillett(@RequestParam Integer id) {
+    public String slettBillett(@RequestParam Integer id) {
         billettRepository.slettBillett(id);
         return "deleted";
     }

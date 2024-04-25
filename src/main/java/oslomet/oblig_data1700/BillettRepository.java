@@ -1,6 +1,5 @@
 package oslomet.oblig_data1700;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -33,21 +32,20 @@ public class BillettRepository {
     }
 
     public Billett findById(int id) {
-        return jdbcTemplate.queryForObject("select * from billett where id=?", new BillettRowMapper(), id);
+        return jdbcTemplate.queryForObject("SELECT * FROM billett WHERE id=?", new BillettRowMapper(), id);
     }
 
     public List<Billett> findAll() {
-        return jdbcTemplate.query("select * from billett", new BillettRowMapper());
+        return jdbcTemplate.query("SELECT * FROM billett", new BillettRowMapper());
     }
 
     public int insertBillett(Billett billett) {
-        String sql = "insert into billett (film, antall, fornavn, etternavn, telefonnr, epost) values (?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO billett (film, antall, fornavn, etternavn, telefonnr, epost) VALUES (?, ?, ?, ?, ?, ?)";
         return jdbcTemplate.update(sql, billett.getFilm(), billett.getAntall(), billett.getFornavn(), billett.getEtternavn(), billett.getTelefonnr(), billett.getEpost());
     }
 
     public int slettBillett(Integer id){
-        String sql = "delete from billett where id = ?";
+        String sql = "DELETE FROM billett WHERE id = ?";
         return jdbcTemplate.update(sql, new Object[] {id} );
-
     }
 }

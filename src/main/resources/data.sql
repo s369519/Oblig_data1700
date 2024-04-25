@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS billett(
+CREATE TABLE IF NOT EXISTS billetter(
     id INTEGER  PRIMARY KEY AUTO_INCREMENT,
     film VARCHAR(50) NOT NULL,
     antall INTEGER  NOT NULL,
@@ -6,5 +6,5 @@ CREATE TABLE IF NOT EXISTS billett(
     etternavn VARCHAR(50) NOT NULL,
     telefonnr VARCHAR(50) NOT NULL,
     epost VARCHAR(50) NOT NULL
-    );
+);
 
