@@ -23,7 +23,7 @@ function getBillett(){
 }
 
 function getListOfBillett() {
-    $.get("http://localhost:8080/getBillett", function (data) {
+    $.get("http://localhost:8080/getBilletter", function (data) {
         let dynamicHTML = "<ul>";
         data.forEach(function (bill) {
             dynamicHTML += "<li>" + bill.film + " " + bill.antall + " " + bill.fornavn + " " + bill.etternavn +
