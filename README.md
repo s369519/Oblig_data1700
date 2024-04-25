@@ -1,6 +1,6 @@
 # OBLIG 3 DATA1700
 
-OsloMet brukernavn: s369519@oslomet.no
+OsloMet brukernavn: s369519@oslomet.no \n
 Github brukernavn: s369519
 Github repo URL: https://github.com/s369519/Oblig_data1700
 Fullt navn: Arthur Thonrud Flotvik
