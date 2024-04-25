@@ -1,8 +1,8 @@
-
+# OBLIG 3 DATA1700
 
 OsloMet brukernavn: s369519@oslomet.no
 Github brukernavn: s369519
-Github repo URL: 
+Github repo URL: https://github.com/s369519/Oblig_data1700
 Fullt navn: Arthur Thonrud Flotvik
 Kort beskrivelse av applikasjon:
 Applikasjonen tar inn informasjon til bestilling av kinobilletter via input felt.
